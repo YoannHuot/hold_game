@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="dist/output.css" />
+	</head>
+	<body class="flex justify-center items-center w-full">
+		<div class="w-full self-center flex relative" style="height: 100vh">
+			<div class="absolute w-auto top-10 left-1/2 transform -translate-x-1/2 text-black">
+				<button class="title flex flex-row justify-center items-center">
+					<img class="w-4 h-4 mr-2" src="src/pictures/plusPicto.png" />
+					<p class="mx-2 text-2xl md:text-3xl font-lato">new game</p>
+				</button>
+			</div>
+
+			<div class="roll absolute w-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black">
+				<button class="flex flex-col justify-center items-center">
+					<img class="w-20 h-20 xs:w-24 xs:h-24" src="src/pictures/Component1.svg" />
+					<p class="text-xl xs:text-2xl xs:pt-4 font-lato">Click to roll</p>
+				</button>
+			</div>
+
+			<div class="hold absolute w-auto bottom-10 left-1/2 transform -translate-x-1/2 text-black">
+				<button class="roll w-8 h-8">
+					<button class="flex flex-row justify-center items-center">
+						<img class="w-8 h-8 mr-2" src="src/pictures/holdPicto.png" />
+						<p class="mx-2 text-2xl md:text-3xl font-lato">hold</p>
+					</button>
+				</button>
+			</div>
+
+			<!-- 
+                --
+                Player 1
+                --
+            -->
+
+			<div class="player1 w-2/4 h-full flex justify-center items-center flex-col">
+				<div class="flex flex-col h-40 justify-center items-center mb-16">
+					<div class="flex flex-row justify-center items-center">
+						<h2 class="md:text-3xl text-2xl mb-4">Player 1</h2>
+						<div class="currentPlayer1 bg-primary w-4 h-4 rounded-full mx-4 mb-4"></div>
+					</div>
+					<p class="totalPlayer1 text-4xl text-primary font-lato">0</p>
+				</div>
+
+				<div
+					class="currentPlayer1 mt-40 p-4 xs:p-8 w-auto h-20 bg-secondary flex justify-center items-center flex-col rounded-xl"
+				>
+					<p class="pt-4">Current</p>
+					<p class="countPlayer1 text-2xl pt-4 pb-4 font-latoBold text-white md:text-3xl">0</p>
+				</div>
+			</div>
+
+			<!-- 
+                --
+                Player 2 
+                --
+            -->
+
+			<div class="player2 w-2/4 flex h-full justify-center items-center flex-col">
+				<div class="flex flex-col h-40 justify-center items-center mb-16">
+					<div class="flex flex-row justify-center items-center">
+						<h2 class="md:text-3xl text-2xl mb-4">Player 2</h2>
+						<div class="currentPlayer2 bg-primary w-4 h-4 rounded-full mx-4 mb-4"></div>
+					</div>
+					<p class="totalPlayer2 text-4xl text-primary font-lato">0</p>
+				</div>
+
+				<div
+					class="currentPlayer2 mt-40 p-4 xs:p-8 w-auto h-20 bg-red-500 flex justify-center items-center flex-col bg-primary rounded-xl"
+				>
+					<p class="pt-4">Current</p>
+					<p class="countPlayer2 text-2xl pt-4 pb-4 font-latoBold text-white md:text-3xl">0</p>
+				</div>
+			</div>
+
+			<!-- 
+                --
+                --
+            -->
+		</div>
+	</body>
+	<script src="jquery-3.6.0.js"></script>
+	<script src="app.js"></script>
+</html>
